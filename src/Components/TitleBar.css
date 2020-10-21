@@ -1,0 +1,20 @@
+.titleBar{
+    border: 2px black solid;
+    background-color: black;
+    box-shadow: 0px 1px 5px 2px #3b3b3b;
+    color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.titleBar h1{
+    font-size: 300%;
+}
+.titleImg{   
+    transform: rotate(10deg);
+    filter: invert(95%);
+    max-height: 10vh;
+    margin: 10px 0;
+}
