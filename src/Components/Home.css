@@ -2,33 +2,41 @@
     min-height: 100vh;
     background-image: url(../images/catImg-large.jpg);
     background-size: contain;
-    padding-top: 5vh;
+    padding-top: 8vh;
     background-repeat: round;
 }
 
 .searchContainer {
-    padding-top: 2vh;
+    padding-top: 4vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
 
 .searchContainer button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: orange;
-    color: black;
+    color: white;
     border: 1px solid gray;
     padding: 6px;
 }
 
+.searchContainer button:hover {
+    font-weight: bold;
+    background-color: rgb(255, 179, 37);
+}
+
 .breedSelection {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 6px;
-    width: 40vw;
+    padding: 6px; 
+    width: 40vw; 
 }
 
 @media only screen and (max-width: 600px) {
     .homeContainer {
-        padding-top: 2vh;
+        padding-top: 1.5vh;
+    }
+    .searchContainer {
+        margin-top: 33vh;
     }
 }

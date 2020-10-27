@@ -3,8 +3,6 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-    //const CATkey = "d5b51f96-d635-48e0-8e9f-e8ae7ef86e72";
-
     const [breeds, setBreeds] = useState([]);
     const [selected, setSelected] = useState("");
 

@@ -1,6 +1,5 @@
 .titleBar {
     background-color: black;
-    box-shadow: 0 2px 5px 4px gray;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
