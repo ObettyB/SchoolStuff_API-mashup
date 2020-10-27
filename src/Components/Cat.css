@@ -42,19 +42,27 @@
 .giphContainer {
     margin-top: 5vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 15px;
+    border-top: white solid 1px;
 }
 
 .giphContainer img {
     max-height: 30vh;
     max-width: 25vw;
-    border: outset black 8px;
+    
 }
 
 h3 {
     color: white;
     padding: 0 20%;
+}
+
+h5 {
+    text-align: left;
+    margin: 20px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 @media only screen and (max-width: 600px) {
@@ -73,7 +81,6 @@ h3 {
     }
     .giphContainer img {
         max-width: 100%;
-        border: outset black 4px;
         margin-top: 10px;
     }
 }

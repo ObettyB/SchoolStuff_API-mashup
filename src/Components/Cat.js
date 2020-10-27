@@ -28,7 +28,7 @@ function Cat({ match }) {
 
     const getGiphFromAPI = async () => {
         if (`${breed.name}` != typeof (undefined)) {
-            var query = `http://api.giphy.com/v1/gifs/search?q=${breed.origin}&api_key=${GIHPYkey}&limit=4`;
+            var query = `http://api.giphy.com/v1/gifs/search?q=${breed.name}&api_key=${GIHPYkey}&limit=3`;
             const response = await fetch(query);
             const data = await response.json();
             setGiphs(data.data);
@@ -49,13 +49,14 @@ function Cat({ match }) {
             <h3>{breed.description}</h3>
             <h2>Temperament :</h2>
             <h3>{breed.temperament}</h3>
-            <h2>Proudly originating from :</h2>
+            <h2>Originating from :</h2>
             <h3 className="catCountry">{breed.origin}</h3>
             <div className="giphContainer">
                 {giphs.map(giph => (
                     <img key={giph.id} src={giph.images.downsized.url} alt="Giphy" />
                 ))}
             </div>
+                <h5>*Giph searchterm '{breed.name}'</h5>
         </div>
     );
 }
