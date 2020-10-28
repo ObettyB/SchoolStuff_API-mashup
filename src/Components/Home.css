@@ -2,7 +2,7 @@
     min-height: 100vh;
     background-image: url(../images/catImg-large.jpg);
     background-size: contain;
-    padding-top: 8vh;
+    padding-top: 10vh;
     background-repeat: round;
 }
 
@@ -34,9 +34,8 @@
 
 @media only screen and (max-width: 600px) {
     .homeContainer {
-        padding-top: 1.5vh;
-    }
-    .searchContainer {
-        margin-top: 33vh;
+        padding-top: 10vh;
+        background-size: cover; 
+        background-repeat: no-repeat;
     }
 }

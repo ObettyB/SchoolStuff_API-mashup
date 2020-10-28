@@ -32,7 +32,6 @@ function Cat({ match }) {
             const response = await fetch(query);
             const data = await response.json();
             setGiphs(data.data);
-            console.log(`${breed.origin}`);
         }
     }
     return (

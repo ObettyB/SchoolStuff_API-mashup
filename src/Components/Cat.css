@@ -4,6 +4,7 @@
     padding-top: 75px;
     min-height: 100vh;
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    padding-top: 20vh;
 }
 
 .catContainer h1, h2 {
@@ -37,7 +38,6 @@
 
 .catPortrait:hover {
     transform: scale(1.4);
- 
 }
 
 .giphContainer {
@@ -50,8 +50,7 @@
 
 .giphContainer img {
     max-height: 30vh;
-    max-width: 25vw;
-    
+    max-width: 25vw; 
 }
 
 h3 {

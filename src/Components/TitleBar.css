@@ -1,9 +1,11 @@
 .titleBar {
     background-color: black;
+    position: fixed;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    z-index: 1;
 }
 
 .titleBar h1 {
@@ -31,4 +33,9 @@ span {
 .Link {
     text-decoration: none;
     color: rgb(247, 247, 247);
+}
+
+.Link:hover {
+    transform: scale(1.1);
+    transition: all .05s ease-in;
 }
