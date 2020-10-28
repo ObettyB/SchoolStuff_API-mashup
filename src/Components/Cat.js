@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './Cat.css';
 
 function Cat({ match }) {
-    const GIHPYkey = "aIRMCUiPA27BbxaGHHGn0WqwW6ZsmS81";
-
     const [breed, setBreed] = useState({});
     const [portrait, setPortrait] = useState("");
     const [giphs, setGiphs] = useState([]);
@@ -28,7 +26,7 @@ function Cat({ match }) {
 
     const getGiphFromAPI = async () => {
         if (`${breed.name}` != typeof (undefined)) {
-            var query = `http://api.giphy.com/v1/gifs/search?q=${breed.name}&api_key=${GIHPYkey}&limit=3`;
+            var query = `http://api.giphy.com/v1/gifs/search?q=${breed.name}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=3`;
             const response = await fetch(query);
             const data = await response.json();
             setGiphs(data.data);
