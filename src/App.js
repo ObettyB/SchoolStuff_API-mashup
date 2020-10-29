@@ -3,11 +3,11 @@ import './App.css';
 import Cat from "./Components/Cat";
 import Home from "./Components/Home";
 import TitleBar from "./Components/TitleBar";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <TitleBar/>
         <Switch>
@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/:catID" component={Cat} />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   )
 }
 
