@@ -3,7 +3,7 @@ import './App.css';
 import Cat from "./Components/Cat";
 import Home from "./Components/Home";
 import TitleBar from "./Components/TitleBar";
-import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 
 const App = () => {
   return (

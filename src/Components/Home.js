@@ -27,14 +27,16 @@ const Home = () => {
               <br />common domesticated felines</h2>
             <div className="searchContainer">
                 <form>
+
                     <select className="breedSelection" id="breeds"
                         value={selected}
-                        onChange={updateSelection} >   
-                        <option disabled hidden value=''>  </option>            
+                        onChange={updateSelection} >
+                        <option disabled hidden value=''>  </option>
                         {breeds.map(breed => (
                             <option value={breed.id} key={breed.id}>{breed.name}</option>
                         ))}
                     </select>
+
                 </form>
                 <Link to={selected}>
                     <button>Get facts</button>
