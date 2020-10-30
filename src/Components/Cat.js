@@ -4,7 +4,7 @@ import './Cat.css';
 function Cat({ match }) {
     const [breed, setBreed] = useState({});
     const [portrait, setPortrait] = useState("");
-    const [giphs, setGiphs] = useState([]);
+    const [flag, setFlag] = useState([]);
 
     // Run on load with '[]'. 
     useEffect(() => {
@@ -13,7 +13,7 @@ function Cat({ match }) {
 
     // Run on condition specified within '[]'. 
     useEffect(() => {
-        getGiphFromAPI();
+        getFlagFromAPI();
     }, [breed]);
 
 
@@ -24,12 +24,12 @@ function Cat({ match }) {
         setPortrait(data[0].url);
     }
 
-    const getGiphFromAPI = async () => {
+    const getFlagFromAPI = async () => {
         if (`${breed.name}` != typeof (undefined)) {
-            var query = `http://api.giphy.com/v1/gifs/search?q=${breed.name}&api_key=${process.env.REACT_APP_GIPHY_API_KEY}&limit=3`;
+            var query = `https://restcountries.eu/rest/v2/name/${breed.origin}`;
             const response = await fetch(query);
             const data = await response.json();
-            setGiphs(data.data);
+            setFlag(data[0]);
         }
     }
     return (
@@ -46,14 +46,11 @@ function Cat({ match }) {
             <h3>{breed.description}</h3>
             <h2>Temperament :</h2>
             <h3>{breed.temperament}</h3>
-            <h2>Originating from :</h2>
+            <h2>Origin :</h2>
             <h3 className="catCountry">{breed.origin}</h3>
-            <div className="giphContainer">
-                {giphs.map(giph => (
-                    <img key={giph.id} src={giph.images.downsized.url} alt="Giphy" />
-                ))}
+            <div className="flagContainer" >
+                <img key={flag.name} src={flag.flag} alt="" />
             </div>
-                <h5>*Giph searchterm '{breed.name}'</h5>
         </div>
     );
 }

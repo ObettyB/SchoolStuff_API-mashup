@@ -40,17 +40,13 @@
     transform: scale(1.4);
 }
 
-.giphContainer {
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    border-top: white solid 1px;
+.flagContainer {
+    margin-top: 25px;
 }
 
-.giphContainer img {
-    max-height: 30vh;
-    max-width: 25vw; 
+.flagContainer img {
+    max-width: 50vw;
+    max-height: 20vh;
 }
 
 h3 {
@@ -72,15 +68,5 @@ h5 {
     .catHeader {
         flex-direction: column;
         margin-bottom: 1vh;
-    }
-    .giphContainer {
-        margin-top: 2vh;
-        flex-wrap: wrap;
-        padding: 0;
-        justify-content: center;
-    }
-    .giphContainer img {
-        max-width: 100%;
-        margin-top: 10px;
     }
 }
