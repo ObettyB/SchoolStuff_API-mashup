@@ -27,7 +27,6 @@ const Home = () => {
               <br />common domesticated felines</h2>
             <div className="searchContainer">
                 <form>
-
                     <select className="breedSelection" id="breeds"
                         value={selected}
                         onChange={updateSelection} >
@@ -36,8 +35,9 @@ const Home = () => {
                             <option value={breed.id} key={breed.id}>{breed.name}</option>
                         ))}
                     </select>
-
                 </form>
+            </div>
+            <div className="getFactsDiv">
                 <Link to={selected}>
                     <button>Get facts</button>
                 </Link>

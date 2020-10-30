@@ -13,20 +13,21 @@
     justify-content: center;
 }
 
-.searchContainer button {
+.getFactsDiv button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 6px;
-    background-color: black;
-    color:white;
+    margin-top: 3vh;
+    padding: 10px;
+
+    background-color: white;
+    color:orange;
     font-weight: bolder;
     border-radius: 5em;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
-.searchContainer button:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: black;
+.getFactsDiv button:hover {
+    background-color: orange;
+    color: white;
 }
 
 .breedSelection {
@@ -41,7 +42,6 @@
     background-position-x: 98%;
     background-repeat: no-repeat;
     
-    margin-right: 5px;
     padding: 5px;
     width: 40vw;
     max-width: 400px;
