@@ -40,7 +40,7 @@ function Cat({ match }) {
                     <div>
                         <img className="catPortrait" src={portrait} alt="" />
                     </div>
-                    <div>
+                    <div className="description">
                         <h1>{breed.name}</h1>
                         <h2>Life-span:</h2>
                         <h3>{breed.life_span} years</h3>
@@ -56,7 +56,7 @@ function Cat({ match }) {
                         <h2>Description:</h2>
                         <h3>{breed.description}</h3>
                     </div>
-                    <div>
+                    <div className="description">
                         <h1>Origin:</h1>
                         <h2 className="catCountry">{breed.origin}</h2>
                     </div>
