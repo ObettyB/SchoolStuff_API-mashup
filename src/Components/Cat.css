@@ -1,73 +1,66 @@
 .catContainer {
     display: flex;
     flex-direction: column;
-    padding-top: 75px;
+    justify-content: center;
+    padding-top: 100px;
     min-height: 100vh;
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-    padding-top: 20vh;
+    font-size: 120%;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 .catContainer h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: normal;
-    margin-top: 3vh;
-    margin-bottom: 1vh;
+}
+
+.catContainer img{
+    max-width: 45vw;
+    max-height: 45vh;
+    border-radius: 25px;
 }
 
 .catContainer h2 {
     color: rgb(240, 156, 0);
 }
 
-.catHeader {
+.catFactRow1, .catFactRow2 {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 5vh;
 }
 
-.catHeader h1 {
-    font-size: 300%;
+.factsWrapper{
+    background: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px 4px gray;
+    padding: 20px;
+    margin: 20px 50px;
 }
 
-.catPortrait {
-    max-height: 30vh;
-    max-width: 50vw;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px 5px gray;
+.description{
+    max-width: 30%;
 }
 
-.catPortrait:hover {
-    transform: scale(1.4);
-}
-
-.flagContainer {
-    margin-top: 25px;
-}
-
-.flagContainer img {
-    max-width: 50vw;
-    max-height: 20vh;
-    border-radius: 4px;
-}
-
-h3 {
-    color: white;
-    padding: 0 20%;
-}
-
-h5 {
-    text-align: left;
-    margin: 20px;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-@media only screen and (max-width: 600px) {
-    .catHeader h1 {
-        font-size: 220%;
-    }
-    .catHeader {
+@media only screen and (max-width: 1200px) {
+    .catFactRow1, .catFactRow2 {
         flex-direction: column;
-        margin-bottom: 1vh;
+        margin-top: 25px;
+    }
+    .catContainer img{
+        max-width: 60vw;
+        max-height: 60vh;
+        border-radius: 15px;
+    }
+    .factsWrapper{
+        padding-top: 15px;
+        margin: 20px 20px;
+    }
+    .description{
+        max-width: 100%;
+    }
+    .flagContainer{
+        margin-top: 15px;
     }
 }

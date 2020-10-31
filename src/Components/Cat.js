@@ -34,22 +34,37 @@ function Cat({ match }) {
     }
     return (
         <div className="catContainer">
-            <div className="catHeader">
-                <img className="catPortrait" src={portrait} alt="" />
-                <div>
-                    <h1>{breed.name}</h1>
-                    <h2>Life-span :</h2>
-                    <h3>{breed.life_span} years</h3>
+            <div className="factsWrapper">
+
+                <div className="catFactRow1">
+                    <div>
+                        <img className="catPortrait" src={portrait} alt="" />
+                    </div>
+                    <div>
+                        <h1>{breed.name}</h1>
+                        <h2>Life-span:</h2>
+                        <h3>{breed.life_span} years</h3>
+                    </div>
+                    <div className="description">
+                        <h2>Temperament:</h2>
+                        <h3>{breed.temperament}</h3>
+                    </div>
                 </div>
-            </div>
-            <h2>Description :</h2>
-            <h3>{breed.description}</h3>
-            <h2>Temperament :</h2>
-            <h3>{breed.temperament}</h3>
-            <h2>Origin :</h2>
-            <h3 className="catCountry">{breed.origin}</h3>
-            <div className="flagContainer" >
-                <img key={flag.name} src={flag.flag} alt="" />
+
+                <div className="catFactRow2">
+                    <div className="description">
+                        <h2>Description:</h2>
+                        <h3>{breed.description}</h3>
+                    </div>
+                    <div>
+                        <h1>Origin:</h1>
+                        <h2 className="catCountry">{breed.origin}</h2>
+                    </div>
+                    <div className="flagContainer" >
+                        <img key={flag.name} src={flag.flag} alt="" />
+                    </div>
+                </div>
+
             </div>
         </div>
     );
