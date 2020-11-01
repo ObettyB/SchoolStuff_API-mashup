@@ -36,33 +36,34 @@ function Cat({ match }) {
         <div className="catContainer">
             <div className="factsWrapper">
 
-                <div className="catFactRow1">
+                <div className="catImgContainer">
                     <div>
-                        <img className="catPortrait" src={portrait} alt="" />
+                        <img src={portrait} alt="" />
                     </div>
-                    <div className="description">
+                    <div>
                         <h1>{breed.name}</h1>
                         <h2>Life-span:</h2>
                         <h3>{breed.life_span} years</h3>
                     </div>
-                    <div className="description">
-                        <h2>Temperament:</h2>
-                        <h3>{breed.temperament}</h3>
-                    </div>
                 </div>
 
-                <div className="catFactRow2">
-                    <div className="description">
-                        <h2>Description:</h2>
-                        <h3>{breed.description}</h3>
-                    </div>
-                    <div className="description">
-                        <h1>Origin:</h1>
-                        <h2 className="catCountry">{breed.origin}</h2>
-                    </div>
-                    <div className="flagContainer" >
-                        <img key={flag.name} src={flag.flag} alt="" />
-                    </div>
+                <div className="description">
+                    <h2>Temperament:</h2>
+                    <h3>{breed.temperament}</h3>
+                </div>
+
+                <div className="description">
+                    <h2>Description:</h2>
+                    <h3>{breed.description}</h3>
+                </div>
+
+                <div>
+                    <h1>Origin:</h1>
+                    <h2 className="catCountry">{breed.origin}</h2>
+                </div>
+
+                <div className="flagImgContainer" >
+                    <img key={flag.name} src={flag.flag} alt="" />
                 </div>
 
             </div>

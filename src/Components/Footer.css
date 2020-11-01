@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.madeBy {
+    background-color: black;
+    color: white;
+}
+
+.madeBy a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerImg {
+    background-color: black;
+    background-image: url(../images/cats-paws.png);
+    background-size: contain;
+    background-repeat: repeat;
+    min-height: 80px;
+    min-width: 100%;
+}
