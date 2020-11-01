@@ -17,7 +17,7 @@
     background-color: black;
     background-image: url(../images/cats-paws.png);
     background-size: contain;
-    background-repeat: repeat;
+    background-repeat: space ;
     min-height: 80px;
     min-width: 100%;
 }
