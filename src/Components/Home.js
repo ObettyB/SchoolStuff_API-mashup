@@ -8,6 +8,7 @@ const Home = () => {
 
     // Run on condition specified within '[]'. 
     useEffect(() => {
+        window.scrollTo(0, 0);
         getBreedsFromAPI();
     }, []);
 
@@ -23,10 +24,11 @@ const Home = () => {
 
     return (
         <div className="homeContainer">
-            <h2>Select a cat breed from the list of
-              <br />common domesticated felines</h2>
+
             <div className="searchContainer">
                 <form>
+                    <h2>Select a cat breed from the list of
+              <br />common domesticated felines</h2>
                     <select className="breedSelection" id="breeds"
                         value={selected}
                         onChange={updateSelection} >
@@ -35,13 +37,14 @@ const Home = () => {
                             <option value={breed.id} key={breed.id}>{breed.name}</option>
                         ))}
                     </select>
+                    <div className="getFactsDiv">
+                        <Link to={selected}>
+                            <button>Get facts</button>
+                        </Link>
+                    </div>
                 </form>
             </div>
-            <div className="getFactsDiv">
-                <Link to={selected}>
-                    <button>Get facts</button>
-                </Link>
-            </div>
+
         </div>
     )
 }

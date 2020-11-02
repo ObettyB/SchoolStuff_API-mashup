@@ -37,9 +37,7 @@ span {
     color: rgb(247, 247, 247);
 }
 
-.Link:hover {
-    color: rgb(228, 228, 228);
-}
+
 
 @media only screen and (max-width: 600px) {
     .titleBar {
