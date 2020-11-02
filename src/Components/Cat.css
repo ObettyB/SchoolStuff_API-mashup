@@ -2,9 +2,7 @@
     padding-top: 150px;
     min-height: 100%;
     font-size: 120%;
-    background-color: green;
-    padding-bottom: 60px;
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    padding-bottom: 150px;
 }
 
 .catContainer h1, h2 {

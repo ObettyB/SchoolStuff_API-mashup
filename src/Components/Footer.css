@@ -4,17 +4,18 @@
 }
 
 .madeBy {
-    background-color: black;
-    color: white;
+    margin-top: 100px;
+    background-color: white;
+    color: black;
 }
 
 .madeBy a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .footerImg {
-    background-color: black;
+    background-color: white;
     background-image: url(../images/cats-paws.png);
     background-size: contain;
     background-repeat: space ;
