@@ -1,12 +1,26 @@
 .homeContainer {
-    min-height: 100vh;
-    background-image: url(../images/catImg-large.jpg);
-    background-size: contain;
-    background-repeat: round;
-    padding-top: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    align-items: stretch;
+    background-color: #B8C2D4;
 }
 
-.searchContainer h2{
+.homeImgDiv {
+    background-image: linear-gradient( to right, #B8C2D4 4%, #b8c2d46e 15%, #b8c2d433 50%),  url(../images/catImg-large.jpg);
+    background-size: cover;
+    flex-grow: 1;
+    order: 1;
+}
+
+.searchContainer {
+    align-self: center;
+    order: 0;
+    flex-grow: 0.2;
+}
+
+.searchContainer h2 {
+    font-size: 200%;
     margin-bottom: 30px;
     color: rgb(31, 31, 31);
 }
@@ -38,9 +52,7 @@
     background-position-x: 96%;
     background-repeat: no-repeat;
     padding: 5px;
-    width: 40vw;
-    min-width: 220px;
-    max-width: 375px;
+    width: 18em;   
 }
 
 .breedSelection:hover {
@@ -49,11 +61,18 @@
 
 @media only screen and (max-width: 768px) {
     .homeContainer {
-        text-align: left;
+        display: block;
+        background-image: url(../images/catImg-large.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+
+        text-align: left;
     }
-    .searchContainer {
-        margin-left: 30px;
+
+    .searchContainer{
+        padding-top: 180px;
+        padding-left: 10px;
+    }
+    .searchContainer h2{
+        font-size: 170%;
     }
 }
