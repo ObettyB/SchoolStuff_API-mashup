@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import homeBackdrop from '../images/catImg-large.jpg';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -25,9 +24,7 @@ const Home = () => {
 
     return (
         <div className="homeContainer">
-
             <div className="homeImgDiv"></div>
-           
             <div className="searchContainer">
                 <form>
                     <h2>Select a cat breed from the list of
@@ -47,7 +44,6 @@ const Home = () => {
                     </div>
                 </form>
             </div>
-
         </div>
     )
 }

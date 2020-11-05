@@ -33,39 +33,35 @@ function Cat({ match }) {
         }
     }
     return (
-        <div className="catContainer">
-            <div className="factsWrapper">
-
-                <div className="catImgContainer">
-                    <div>
+        <div className="catBackground">
+            <div className="cardWrapper">
+                <div className="catHeader">
+                    <div className="flagImg">
+                        <img key={flag.name} src={flag.flag} alt="" />
+                    </div>
+                    <div className="catImg">
                         <img src={portrait} alt="" />
                     </div>
-                    <div>
+                </div>
+                <div className="txtFacts">
+                    <div className="fact1">
                         <h1>{breed.name}</h1>
                         <h2>Life-span:</h2>
                         <h3>{breed.life_span} years</h3>
                     </div>
+                    <div className="fact2">
+                        <h1>Origin:</h1>
+                        <h2 className="catCountry">{breed.origin}</h2>
+                    </div>
+                    <div className="fact3">
+                        <h2>Temperament:</h2>
+                        <h3>{breed.temperament}</h3>
+                    </div>
+                    <div className="fact4">
+                        <h2>Description:</h2>
+                        <h3>{breed.description}</h3>
+                    </div>
                 </div>
-
-                <div className="description">
-                    <h2>Temperament:</h2>
-                    <h3>{breed.temperament}</h3>
-                </div>
-
-                <div className="description">
-                    <h2>Description:</h2>
-                    <h3>{breed.description}</h3>
-                </div>
-
-                <div>
-                    <h1>Origin:</h1>
-                    <h2 className="catCountry">{breed.origin}</h2>
-                </div>
-
-                <div className="flagImgContainer" >
-                    <img key={flag.name} src={flag.flag} alt="" />
-                </div>
-
             </div>
         </div>
     );

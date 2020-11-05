@@ -1,66 +1,92 @@
-.catContainer {
-    padding-top: 180px;
+.catBackground {
+    padding-top: 100px;
     min-height: 100%;
     font-size: 120%;
-    padding-bottom: 150px;
-    display: flex;
-    justify-content: center;
+    background-color: white;
 }
 
-.catContainer h1, h2 {
+.catBackground h1, h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: normal;
 }
 
-.catImgContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.catBackground h1, h3 {
+    color: rgb(46, 46, 46);
 }
 
-.catImgContainer img {
-    margin-left: 15px;
-    max-width: 40vw;
-    max-height: 50vh;
-    border-radius: 25px;
-}
-
-.flagImgContainer img{
-    margin-top: 50px;
-    max-width: 25vw;
-    max-height: 25vh;
-    border-radius: 25px;
-}
-
-.catContainer h2 {
+.catBackground h2 {
     color: rgb(240, 156, 0);
 }
 
-.factsWrapper{
-    border-radius: 25px;
+.cardWrapper {
+    border-radius: 5px;
     box-shadow: 5px 5px 8px 4px gray;
-    padding: 50px 0 50px 0;
-    margin: 20px 50px;
-    max-width: 1200px;
+    max-width: 800px;
+    margin: 70px 25px;
     display: flex;
     flex-direction: column;
 }
 
-.description{
-    padding: 20px 8vw 25px 8vw;
+.catHeader {
+    position: relative;
+    width: 100%;
 }
 
-@media only screen and (max-width: 600px){
-    .catImgContainer {
-        flex-wrap: wrap;
-    }
+.flagImg img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+}
 
-    .catImgContainer img {
-        flex-wrap: wrap;
-        max-width: 60vw;
+.catImg {
+    position: absolute;
+    left: 18%;
+    top: 42%;
+
+
+    width: 500px;
+    height: 500px;
+
+    max-width: 60vw;
+    max-height: 60vw;
+
+    border-radius: 50%;
+}
+
+.catImg img {
+    border: 4px solid white;
+    border-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.txtFacts {
+    margin-top: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.fact1, .fact2, .fact3, .fact4 {
+
+    flex-grow: 1;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .txtFacts{
+        margin-top: 45%;
     }
-    
-    .flagImgContainer img{
-        max-width: 40vw;
+    .fact1, .fact2, .fact3, .fact4 {
+        font-size: 85%;
+        margin: 10px;
+        padding: 5px;
+    }
+    .cardWrapper {
+        margin: 55px 25px;
+    }
+    .catImg{
+        left: 16%;
     }
 }
