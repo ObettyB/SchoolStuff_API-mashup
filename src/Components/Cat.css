@@ -66,13 +66,19 @@
     margin-top: 35%;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
 }
 
 .fact1, .fact2, .fact3, .fact4 {
-
-    flex-grow: 1;
+    flex-grow: 1; 
     padding: 20px;
+}
+
+.fact1, .fact2 {
+    width: 50%;   
+}
+
+.fact3, .fact4 {
+  width: 100%;  
 }
 
 @media only screen and (max-width: 600px) {
