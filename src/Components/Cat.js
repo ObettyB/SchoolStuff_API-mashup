@@ -34,35 +34,44 @@ function Cat({ match }) {
     }
     return (
         <div className="catBackground">
-            <div className="cardWrapper">
-                <div className="catHeader">
-                    <div className="flagImg">
-                        <img key={flag.name} src={flag.flag} alt="" />
-                    </div>
-                    <div className="catImg">
-                        <img src={portrait} alt="" />
-                    </div>
-                </div>
+
+            <div className="wrapper">
+
+                <div className="catImg" style={{ backgroundImage: `url(${portrait})` }}></div>
+
                 <div className="txtFacts">
+
                     <div className="fact1">
                         <h1>{breed.name}</h1>
+                    </div>
+                    <div className="fact2">
+                        <img key={flag.name} src={flag.flag} alt="" />
+                    </div>
+
+                    <div className="fact3">
                         <h2>Life-span:</h2>
                         <h3>{breed.life_span} years</h3>
                     </div>
-                    <div className="fact2">
-                        <h1>Origin:</h1>
-                        <h2 className="catCountry">{breed.origin}</h2>
+                    <div className="fact4">
+                        <h2>Origin:</h2>
+                        <h3 className="catCountry">{breed.origin}</h3>
+
                     </div>
-                    <div className="fact3">
+                    <div className="fact5">
                         <h2>Temperament:</h2>
                         <h3>{breed.temperament}</h3>
                     </div>
-                    <div className="fact4">
+                    <div className="fact6">
                         <h2>Description:</h2>
                         <h3>{breed.description}</h3>
                     </div>
+
                 </div>
+
             </div>
+
+
+
         </div>
     );
 }

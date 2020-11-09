@@ -2,37 +2,40 @@
     display: flex;
     flex-wrap: nowrap;
     height: 100vh;
-    align-items: stretch;
-    background-color: #B8C2D4;
 }
 
 .homeImgDiv {
-    background-image: linear-gradient( to right, #B8C2D4 4%, #b8c2d46e 15%, #b8c2d433 50%),  url(../images/catImg-large.jpg);
+    background-image: linear-gradient( to right, #B4BFD1 4%, #b4bfd177 15%, #b4bfd113 50%), url(../images/catImg-large.jpg);
     background-size: cover;
+    background-position: center center;
     flex-grow: 1;
     order: 1;
 }
 
 .searchContainer {
-    align-self: center;
+    background-color: #B4BFD1;
+    padding-top: 300px;
+    padding-left: 5%;
     order: 0;
-    flex-grow: 0.2;
+    flex-grow: 0.25;
 }
 
 .searchContainer h2 {
-    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    color: white;
     margin-bottom: 30px;
-    color: rgb(31, 31, 31);
 }
 
 .getFactsDiv button {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 3vh;
-    padding: 12px 16px;
+    padding: 9px 14px;
     background-color: orange;
     color: white;
-    font-weight: bolder;
-    border-radius: 5em;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0.6em;
     border: 2px solid white;
 }
 
@@ -45,34 +48,33 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    border: 1px solid rgb(19, 19, 19);
-    border-radius: 5em;
-    background: white center url(../images/drop-down-arrow.png);
-    background-size: 20px;
-    background-position-x: 96%;
+    border: 2px solid white;
+    border-radius: 0.6em;
+    background: white center url(../images/arrow.png);
+    background-size: 25%;
+    background-position: 108% top;
     background-repeat: no-repeat;
-    padding: 5px;
-    width: 18em;   
+    padding: 8px;
+    width: 23.5em;
 }
 
 .breedSelection:hover {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .homeContainer {
-        display: block;
-        background-image: url(../images/catImg-large.jpg);
-        background-size: cover;
-
-        text-align: left;
+        flex-direction: column;
+        text-align: center;
     }
-
-    .searchContainer{
-        padding-top: 180px;
+    .searchContainer {
+        padding-top: 200px;
         padding-left: 10px;
     }
-    .searchContainer h2{
+    .searchContainer h2 {
         font-size: 170%;
+    }
+    .homeImgDiv {
+        background-image: linear-gradient( to bottom, #B4BFD1 4%, #b4bfd177 15%, #b4bfd113 50%), url(../images/catImg-large.jpg);
     }
 }

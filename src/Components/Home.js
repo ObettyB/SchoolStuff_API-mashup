@@ -27,8 +27,10 @@ const Home = () => {
             <div className="homeImgDiv"></div>
             <div className="searchContainer">
                 <form>
-                    <h2>Select a cat breed from the list of
-              <br />common domesticated felines</h2>
+                    <h2>Select a cat breed from 
+                    <br />the list of common
+                       <br />domesticated cats
+                    </h2>
                     <select className="breedSelection" id="breeds"
                         value={selected}
                         onChange={updateSelection} >

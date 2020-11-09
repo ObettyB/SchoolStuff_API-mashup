@@ -1,40 +1,40 @@
 .titleBar {
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(255, 255, 255, 0.575);
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 5vw;
     z-index: 1;
 }
 
 .titleBar h1 {
-    font-size: 200%;
+    font-weight: 500;
+    font-size: 38px;
     font-style: normal;
     text-decoration: none;
 }
 
 span {
     color: orange;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 110%;
 }
 
 .titleImg {
     transform: rotate(15deg);
-    filter: invert(95%);
-    max-height: 60px;
-    max-width: 60px;
+    max-height: 65px;
+    max-width: 65px;
+    
     margin: 12px 0px 12px 25px ;
-    border: solid 2px black;
+    border: solid 2px white;
     border-radius: 50%;
     padding: 8px;
 }
 
 .Link {
     text-decoration: none;
-    color: rgb(247, 247, 247);
+    color: white;
 }
 
 
