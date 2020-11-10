@@ -1,10 +1,9 @@
 .catBackground {
     padding-top: 93px;
     min-height: 100vh;
-    
+    display: flex;
     background-color: #B4BFD1;
     text-align: center;
-    overflow: visible;
 }
 
 .catBackground h1, h2 {
@@ -19,40 +18,38 @@
     color: rgb(240, 156, 0);
 }
 
-.wrapper {
-    
-    height: 90.5vh;
+.catFactDiv {
     display: flex;
 }
 
-.wrapper h2 {
+.catFactDiv h2 {
     color: #4F4F4F;
     font-size: 180%;
     font-weight: 600;
 }
 
-.wrapper h3 {
+.catFactDiv h3 {
     color: rgb(235, 235, 235);
     font-size: 150%;
     font-weight: normal;
 }
 
 .catImg {
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
     flex: 0.9;
 }
 
-.txtFacts {
-    background-color: #B4BFD1;
+.factsGrid {
     flex: 1;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     align-items: center;
 }
 
 .fact1 {
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 1;
 }
 
@@ -64,9 +61,12 @@
 }
 
 .fact2 {
-    grid-column: 3/4;
+    justify-self: center;
+    grid-column: 2/3;
     grid-row: 1;
     border-radius: 50%;
+    min-width: 200px;
+    min-height: 200px;
     width: 300px;
     height: 300px;
     max-width: 20vw;
@@ -79,50 +79,32 @@
     border-radius: inherit;
     width: 100%;
     height: 100%;
-    border: outset 4px rgba(255, 255, 255, 0.308);
+    border: inset 6px rgba(255, 255, 255, 0.473);
 }
 
 .fact3 {
-    grid-column: 1/2;
+    padding: 0 5em;
+    grid-column: 1/3;
     grid-row: 2;
-    text-align: right;
-
 }
 
 .fact4 {
-    grid-column: 3/4;
-    grid-row: 2;
-    text-align: center;
-}
-
-.fact5 {
-    padding: 0 5em;
-    grid-column: 1/4;
+    padding: 0 5%;
+    grid-column: 1/3;
     grid-row: 3;
 }
 
-.fact6 {
-    padding: 0 5%;
-    grid-column: 1/4;
-    grid-row: 4;
-}
-
 @media only screen and (max-width: 800px) {
-    .wrapper {
+    .catFactDiv {
         flex-direction: column;
     }
-
     .catImg {
-        background-size: cover;
-        background-position: center center;
         flex: 1 0 400px;
     }
-
-    .txtFacts{
+    .factsGrid {
         flex: 1 0 auto;
     }
-
-    .fact1, .fact2, .fact3, .fact4, .fact5, .fact6 {
+    .fact1, .fact2, .fact3, .fact4 {
         margin-top: 50px;
         margin-bottom: 50px;
     }

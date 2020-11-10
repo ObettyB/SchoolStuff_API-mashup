@@ -1,3 +1,7 @@
+*:focus{
+    outline: none;
+}
+
 .homeContainer {
     display: flex;
     flex-wrap: nowrap;
@@ -5,6 +9,7 @@
 }
 
 .homeImgDiv {
+
     background-image: linear-gradient( to right, #B4BFD1 4%, #b4bfd177 15%, #b4bfd113 50%), url(../images/catImg-large.jpg);
     background-size: cover;
     background-position: center center;
@@ -25,17 +30,17 @@
     font-size: 38px;
     font-weight: 500;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .getFactsDiv button {
-    margin-top: 3vh;
-    padding: 9px 14px;
+    margin-top: 4vh;
+    padding: 10px 20px;
     background-color: orange;
     color: white;
     font-weight: 500;
     font-size: 18px;
-    border-radius: 0.6em;
+    border-radius: 0.3em;
     border: 2px solid white;
 }
 
@@ -49,7 +54,7 @@
     -moz-appearance: none;
     appearance: none;
     border: 2px solid white;
-    border-radius: 0.6em;
+    border-radius: 0.3em;
     background: white center url(../images/arrow.png);
     background-size: 25%;
     background-position: 108% top;
